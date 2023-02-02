@@ -1,0 +1,187 @@
+Name: Kaushik Padwal
+Lab Assignment 9
+Question no 1
+
+mysql> create database student;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> use student;
+Database changed
+mysql> create table parents(p_id int primary key,p_name varchar(20),city varchar(20),age int,AnnualIncome int,vaccupation varchar(20),E_mailId varchar(20));
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> insert into parents values(101,"Arun shinde","Ahmedabad",55,650000,"Manager","Ashu@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from parents;
++------+-------------+-----------+------+--------------+-------------+----------------+
+| p_id | p_name      | city      | age  | AnnualIncome | vaccupation | E_mailId       |
++------+-------------+-----------+------+--------------+-------------+----------------+
+|  101 | Arun shinde | Ahmedabad |   55 |       650000 | Manager     | Ashu@gmail.com |
++------+-------------+-----------+------+--------------+-------------+----------------+
+1 row in set (0.00 sec)
+
+mysql> insert into parents values(102,"Raju kale","pune",40,554000,"Construction","kale@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(103,"salman kaif","Delhi",45,652000,"Desinger","kaif@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(104,"santosh jagtap","pune",50,752000,"Teacher","jagtap@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(105,"sanjay jadhav","mumbai",46,402000,"Agent","agtap@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(106,"sanjay kale","banglore",53,495000,"Company","sanju@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(107,"Aman Gupta","banglore",62,695000,"BuisnessMan","mnju@gmail.com");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into parents values(108,"Aman Chinppa","Chennai",56,795000,"Farmer","Chinnppa@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(109,"seema Chimte","surat",41,395000,"Farmer","Chimu@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(110,"monika kale","satara",50,505000,"HR","himu@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(111,"Shubham ghadge","jaipur",45,605000,"Soft Engineer","shub@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(112,"Ravi Rana","Delhi",39,575000,"Soft Engineer","llub@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(113,"Rupesh patil","pune",49,475800,"Agent","rupa@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(114,"Anajali Sharma","Banglore",42,495800,"Accountant","anju@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(115,"Karina sharma","ahemdabad",38,695800,"doctor","rupa@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(116,"sushant verma","Indor",58,795600,"civil engineer","sus@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(117,"Aliya khan","mumbai",44,495600,"chef","ali@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(118,"Asif khan","patna",44,475600,"worker","asi@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(119,"Asus han","kokan",41,575600,"HR","asuuui@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into parents values(120,"suman dhal","Bengal",53,675600,"Police","astti@gmail.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from parents;
++------+----------------+-----------+------+--------------+----------------+--------------------+
+| p_id | p_name         | city      | age  | AnnualIncome | vaccupation    | E_mailId           |
++------+----------------+-----------+------+--------------+----------------+--------------------+
+|  101 | Arun shinde    | Ahmedabad |   55 |       650000 | Manager        | Ashu@gmail.com     |
+|  102 | Raju kale      | pune      |   40 |       554000 | Construction   | kale@gmail.com     |
+|  103 | salman kaif    | Delhi     |   45 |       652000 | Desinger       | kaif@gmail.com     |
+|  104 | santosh jagtap | pune      |   50 |       752000 | Teacher        | jagtap@gmail.com   |
+|  105 | sanjay jadhav  | mumbai    |   46 |       402000 | Agent          | agtap@gmail.com    |
+|  106 | sanjay kale    | banglore  |   53 |       495000 | Company        | sanju@gmail.com    |
+|  107 | Aman Gupta     | banglore  |   62 |       695000 | BuisnessMan    | mnju@gmail.com     |
+|  108 | Aman Chinppa   | Chennai   |   56 |       795000 | Farmer         | Chinnppa@gmail.com |
+|  109 | seema Chimte   | surat     |   41 |       395000 | Farmer         | Chimu@gmail.com    |
+|  110 | monika kale    | satara    |   50 |       505000 | HR             | himu@gmail.com     |
+|  111 | Shubham ghadge | jaipur    |   45 |       605000 | Soft Engineer  | shub@gmail.com     |
+|  112 | Ravi Rana      | Delhi     |   39 |       575000 | Soft Engineer  | llub@gmail.com     |
+|  113 | Rupesh patil   | pune      |   49 |       475800 | Agent          | rupa@gmail.com     |
+|  114 | Anajali Sharma | Banglore  |   42 |       495800 | Accountant     | anju@gmail.com     |
+|  115 | Karina sharma  | ahemdabad |   38 |       695800 | doctor         | rupa@gmail.com     |
+|  116 | sushant verma  | Indor     |   58 |       795600 | civil engineer | sus@gmail.com      |
+|  117 | Aliya khan     | mumbai    |   44 |       495600 | chef           | ali@gmail.com      |
+|  118 | Asif khan      | patna     |   44 |       475600 | worker         | asi@gmail.com      |
+|  119 | Asus han       | kokan     |   41 |       575600 | HR             | asuuui@gmail.com   |
+|  120 | suman dhal     | Bengal    |   53 |       675600 | Police         | astti@gmail.com    |
++------+----------------+-----------+------+--------------+----------------+--------------------+
+20 rows in set (0.00 sec)
+
+1.count number of parents whose annual income is more than 6 lakh
+
+mysql> select count(AnnualIncome)from parents where annualIncome>600000;
++---------------------+
+| count(AnnualIncome) |
++---------------------+
+|                   9 |
++---------------------+
+1 row in set (0.01 sec)
+
+2.s select parent whose annual income is less than 5 lakh otherwise age is more than 45
+mysql> select * from parents where AnnualIncome<500000 or age>45;
++------+----------------+-----------+------+--------------+----------------+--------------------+
+| p_id | p_name         | city      | age  | AnnualIncome | vaccupation    | E_mailId           |
++------+----------------+-----------+------+--------------+----------------+--------------------+
+|  101 | Arun shinde    | Ahmedabad |   55 |       650000 | Manager        | Ashu@gmail.com     |
+|  104 | santosh jagtap | pune      |   50 |       752000 | Teacher        | jagtap@gmail.com   |
+|  105 | sanjay jadhav  | mumbai    |   46 |       402000 | Agent          | agtap@gmail.com    |
+|  106 | sanjay kale    | banglore  |   53 |       495000 | Company        | sanju@gmail.com    |
+|  107 | Aman Gupta     | banglore  |   62 |       695000 | BuisnessMan    | mnju@gmail.com     |
+|  108 | Aman Chinppa   | Chennai   |   56 |       795000 | Farmer         | Chinnppa@gmail.com |
+|  109 | seema Chimte   | surat     |   41 |       395000 | Farmer         | Chimu@gmail.com    |
+|  110 | monika kale    | satara    |   50 |       505000 | HR             | himu@gmail.com     |
+|  113 | Rupesh patil   | pune      |   49 |       475800 | Agent          | rupa@gmail.com     |
+|  114 | Anajali Sharma | Banglore  |   42 |       495800 | Accountant     | anju@gmail.com     |
+|  116 | sushant verma  | Indor     |   58 |       795600 | civil engineer | sus@gmail.com      |
+|  117 | Aliya khan     | mumbai    |   44 |       495600 | chef           | ali@gmail.com      |
+|  118 | Asif khan      | patna     |   44 |       475600 | worker         | asi@gmail.com      |
+|  120 | suman dhal     | Bengal    |   53 |       675600 | Police         | astti@gmail.com    |
++------+----------------+-----------+------+--------------+----------------+--------------------+
+14 rows in set (0.00 sec)
+
+3. select parent who are living in city Ahmedabad,Delhi,Mumbai,Chennai,Banglore
+mysql> select * from parents where city in('Ahmedabad','Delhi','Mumbai','Chennai','Banglore');
++------+----------------+-----------+------+--------------+---------------+--------------------+
+| p_id | p_name         | city      | age  | AnnualIncome | vaccupation   | E_mailId           |
++------+----------------+-----------+------+--------------+---------------+--------------------+
+|  101 | Arun shinde    | Ahmedabad |   55 |       650000 | Manager       | Ashu@gmail.com     |
+|  103 | salman kaif    | Delhi     |   45 |       652000 | Desinger      | kaif@gmail.com     |
+|  105 | sanjay jadhav  | mumbai    |   46 |       402000 | Agent         | agtap@gmail.com    |
+|  106 | sanjay kale    | banglore  |   53 |       495000 | Company       | sanju@gmail.com    |
+|  107 | Aman Gupta     | banglore  |   62 |       695000 | BuisnessMan   | mnju@gmail.com     |
+|  108 | Aman Chinppa   | Chennai   |   56 |       795000 | Farmer        | Chinnppa@gmail.com |
+|  112 | Ravi Rana      | Delhi     |   39 |       575000 | Soft Engineer | llub@gmail.com     |
+|  114 | Anajali Sharma | Banglore  |   42 |       495800 | Accountant    | anju@gmail.com     |
+|  117 | Aliya khan     | mumbai    |   44 |       495600 | chef          | ali@gmail.com      |
++------+----------------+-----------+------+--------------+---------------+--------------------+
+9 rows in set (0.00 sec)
+
+4.update email Id of each parents as "NA"
+mysql> update parents set e_mailId="NA";
+Query OK, 20 rows affected (0.01 sec)
+Rows matched: 20  Changed: 20  Warnings: 0
+
+mysql> select * from parents;
++------+----------------+-----------+------+--------------+----------------+----------+
+| p_id | p_name         | city      | age  | AnnualIncome | vaccupation    | E_mailId |
++------+----------------+-----------+------+--------------+----------------+----------+
+|  101 | Arun shinde    | Ahmedabad |   55 |       650000 | Manager        | NA       |
+|  102 | Raju kale      | pune      |   40 |       554000 | Construction   | NA       |
+|  103 | salman kaif    | Delhi     |   45 |       652000 | Desinger       | NA       |
+|  104 | santosh jagtap | pune      |   50 |       752000 | Teacher        | NA       |
+|  105 | sanjay jadhav  | mumbai    |   46 |       402000 | Agent          | NA       |
+|  106 | sanjay kale    | banglore  |   53 |       495000 | Company        | NA       |
+|  107 | Aman Gupta     | banglore  |   62 |       695000 | BuisnessMan    | NA       |
+|  108 | Aman Chinppa   | Chennai   |   56 |       795000 | Farmer         | NA       |
+|  109 | seema Chimte   | surat     |   41 |       395000 | Farmer         | NA       |
+|  110 | monika kale    | satara    |   50 |       505000 | HR             | NA       |
+|  111 | Shubham ghadge | jaipur    |   45 |       605000 | Soft Engineer  | NA       |
+|  112 | Ravi Rana      | Delhi     |   39 |       575000 | Soft Engineer  | NA       |
+|  113 | Rupesh patil   | pune      |   49 |       475800 | Agent          | NA       |
+|  114 | Anajali Sharma | Banglore  |   42 |       495800 | Accountant     | NA       |
+|  115 | Karina sharma  | ahemdabad |   38 |       695800 | doctor         | NA       |
+|  116 | sushant verma  | Indor     |   58 |       795600 | civil engineer | NA       |
+|  117 | Aliya khan     | mumbai    |   44 |       495600 | chef           | NA       |
+|  118 | Asif khan      | patna     |   44 |       475600 | worker         | NA       |
+|  119 | Asus han       | kokan     |   41 |       575600 | HR             | NA       |
+|  120 | suman dhal     | Bengal    |   53 |       675600 | Police         | NA       |
++------+----------------+-----------+------+--------------+----------------+----------+
+20 rows in set (0.00 sec)
